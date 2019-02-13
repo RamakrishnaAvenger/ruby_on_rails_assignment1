@@ -1,0 +1,5 @@
+<ol>
+<% @employee_list.each do |employee| %>
+    <li><%= link_to employee[:name], {:action => 'show', :name => employee[:name]} %></li><br><br> 
+<% end %>
+</ol>
